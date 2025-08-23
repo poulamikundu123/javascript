@@ -30,3 +30,9 @@ console.log(newDate.getDay());
 console.log(newDate.getMonth()+1); //january they condsider it as 0
 
 // `${newDate.getDay()} and the time `
+
+//if we have to make some customisation to the dates
+
+newDate.toLocaleString('default',{
+    weekday: "long",
+})
