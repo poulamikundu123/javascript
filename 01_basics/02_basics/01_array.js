@@ -1,5 +1,5 @@
 //array
-/*
+
 const myArr = [0,1,2,3,4,5]
 const myHeroes = ["shaktiman", "naagraj"]
 
@@ -25,7 +25,7 @@ console.log(myArr);
 
 
 // slice , spice
-const myArr = [0,1,2,3,4,5]
+
 console.log("A ", myArr);
 
 //slice makes change in the copy of the array, without making changes to the original array
@@ -37,10 +37,10 @@ console.log("B ", myArr);
 const myn2 = myArr.splice(1,3) //slicing from index 1to 3..3 is included
 console.log(myn2);
 console.log("C ", myArr);
-*/
+
 const marvel_heroes = ['thor','ironman', 'shinchan']
 const disney_heroes = ['superman','flash', 'batman']
-/*
+
 marvel_heroes.push(disney_heroes) //disney_heroes array pura ak element ki tarah add horaha hai
 console.log(marvel_heroes);
 console.log(marvel_heroes[3][0]);
@@ -50,7 +50,7 @@ console.log(allHeroes);
 
 const all_new_heroes = [...marvel_heroes, ...disney_heroes]
 console.log(all_new_heroes);
-*/
+
 
 console.log(Array.isArray("Poulami"))
 console.log(Array.from("Poulami"));
