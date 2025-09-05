@@ -2,7 +2,7 @@
 //const tinderUser = new Object() //singleton objects
 
 //console.log(tinderUser); //we will see that both will give us the same output...the only diff is one is singleton, the other isnt
-
+/*
 const tinderUser = {}
 tinderUser.id = "123abc"
 tinderUser.name = "Poulami"
@@ -23,7 +23,7 @@ const regularUser ={
 /*console.log(regularUser.fullname);
 console.log(regularUser.fullname.userfullname);
 console.log(regularUser.fullname.userfullname.firstName);
-*/
+
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
@@ -70,3 +70,52 @@ console.log(Object.entries(tinderUser));
 
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+*/
+
+
+                          //-----------------OBJECT DESTRUCTURING-----------------------//
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstuctor: "poulami",
+}
+//course.courseInstructor
+
+//const {courseInstuctor} = course
+//console.log(courseInstuctor);
+
+const {courseInstuctor: teacher} = course
+console.log(teacher);
+
+//destructuring used for react
+
+/*
+const navbar = ({company}) => {       //har baar prop.company ya prop. kuch kuch likhen se better they will use this object detruct technique
+
+}
+navbar(company = "poulami")
+*/
+
+//APIs: JAB APNA KAAM KISI AAUR KE SAR PAAR DAAL DENA HOTA HAI HUMHE
+
+
+//object ka naam hota hai, but aagr bss aisehi likh de IT WILL BE TREATED AS "JSON"
+// JSON mei keys and values both are are strings
+
+/* API in object fromat
+{
+    "coursename": "js in hindi",
+    "price": "999",
+    "courseInstuctor": "poulami",
+}
+
+AAPI in arrange format
+[
+    {},
+    {},
+    {]}
+]
+*/
+
+//Randomuser.me API
+// usi API ko samajhne ke liye we will need jsonformatter..we can also create one of our own
